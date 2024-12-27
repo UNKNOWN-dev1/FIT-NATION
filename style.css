@@ -1,0 +1,481 @@
+body {
+    font-size: 15pt;
+    background-image: url(backgroundimg.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+#HomePage{
+  display: block;
+  
+}
+#WorkoutPage{
+  display: none;
+  
+}
+h3{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+#Title,#Selectlevel{
+  color: white;
+  text-shadow: 4px 4px 6px #000;
+}
+
+label{
+  position: relative;
+  top: 215px;
+  left: 144px;
+  font-size: 15px;
+  color: white;
+  text-shadow: 4px 4px 6px #000;
+  
+}
+#Workout-btn, #Track-btn, #Tipsbtn, #Goalbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: 135px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: aliceblue;
+}
+#Goalbtn{
+  position: relative;
+  top: 220px;
+}
+
+#Tipsbtn{
+  position: relative;
+  top: 200px;
+  background: yellow;
+}
+
+#BegginerBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: 120px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: royalblue;
+  margin: 20px;
+}
+#IntermediateBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: 120px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: lightyellow;
+  margin: 20px;
+}
+#ExpertBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: 120px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: orangered;
+  margin: 20px;
+}
+#Backbtn,#Backgoal{
+  border: 2px solid black;
+  background: lightblue;
+  border-radius: 23px;
+}
+#BegginerPage{
+  display: none;
+  height: 1100vh;
+  max-width: 100%;
+  background: linear-gradient(cyan, purple);
+}
+#Backbtn2,#Backtips{
+  border: 2px solid black;
+  background: lightblue;
+  border-radius: 23px;
+}
+#IntermediatePage{
+  display: none;
+  height: 1380vh;
+  max-width: 100%;
+  background: linear-gradient(lightyellow, purple);
+}
+#Backbtn3,#Back5,#Back6{
+  border: 2px solid black;
+  background: lightblue;
+  border-radius: 23px;
+}
+#ExpertPage{
+  display: none;
+  height: 1450vh;
+  max-width: 100%;
+  background: ghostwhite;
+}
+#Backbtn4{
+  border: 2px solid black;
+  background: lightblue;
+  border-radius: 23px;
+}
+#Tipspage,#Tip,#Backtips{
+  display: none;
+}
+#Tipspage{
+  height: 100vh;
+  width: 51vh;
+  text-shadow: 2px 2px 4px #000;
+}
+#Goalpage{
+  display: none;
+}
+#Basic{
+  display: none;
+  height: 100vh;
+  width: 52vh;
+}
+#About{
+  display: none;
+}
+
+ul#tipstricks,#warmup,#fuelbody,#consistent,#sleep{
+  color: white;
+}
+h3#tipstricks{
+  color: white;
+}
+
+
+#Pushup{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#Plank{
+  border: 2px solid;
+  position: relative;
+  left: 45px;
+  box-shadow: 4px 4px 6px;
+}
+#BwSquats{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#Glutebridges{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#legraises{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#finish{
+  color: red;
+  text-shadow: 2px 2px 4px;
+}
+#sideplank{
+  background: white;
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#lunges{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#calfraises{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#mountainclimbers{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#supermanhold{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#burpees{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#skaterhop{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#jumpsquats{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#forwardbend{
+  position: relative;
+  left: 10px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#catcowpose{
+  position: relative;
+  left: 10px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#childpose{
+  position: relative;
+  left: 10px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 4px 4px 6px;
+}
+#pikepushups{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#bulgariansplitsquat{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#bicyclecrunche{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#diamondpushups{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#dips{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#hollowbodyhold{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#sidehipdips{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#russiantwists{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#archerpushups{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+#handstand{
+  position: relative;
+  left: 45px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 6px;
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lightblue;
+  padding: 8px 13px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  font-size: 14pt;
+  margin-right: 10px;
+  color: black;
+  margin-top: 10px;
+  word-wrap: break-word; /* Ensure long tasks wrap properly */
+}
+
+/* Completed tasks (strikethrough effect) */
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+.done-btn, .delete-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.done-btn {
+  background-color: lightgreen;
+}
+
+.done-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.delete-btn {
+  background-color: tomato;
+}
+
+.delete-btn:hover {
+  background-color: red;
+  color: white;
+}
+#TextList {
+  font-size: 45px;
+  color: grey;
+  text-shadow: 2px 2px 4px #000;
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Arrange tasks from top to bottom */
+  gap: 10px; /* Space between tasks */
+  padding: 10px;
+  max-height: 300px; /* Set a max height for scrollability */
+  overflow-y: auto; 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#TaskList{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 90px;
+  border: 2px solid black;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  height: 30px;
+}
+#AddTask{
+  position: relative;
+  left: 80px;
+  border: 2px solid black;
+  background: yellow;
+  height: 35px;
+  border-radius: 10px;
+}
+.hamburger {
+  display: none; /* Hidden on large screens */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger div {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Toggle Active Menu for Small Screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide nav links by default */
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul.active {
+    display: flex; /* Show nav links when active */
+    background: white;
+    height: 100vh;
+    width: 13vh;
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu */
+  
+  }
+  nav a{
+    text-decoration: none;
+    color: burlywood;
+  }
+}
+form{
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+}
