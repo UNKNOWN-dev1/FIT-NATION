@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FIT NATION</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div id="Basic">
+      <button id="Back5">Back</button>
+      <form>
+      <h1>WORKOUT BASICS</h1>
+
+<h2>1. WARM-UP</h2>
+<ul>
+  <li>Light exercises to prepare your body.</li>
+  <li>Examples: Jogging, stretching, or bodyweight exercises.</li>
+</ul>
+
+<h2>2. REPS (REPETITIONS)</h2>
+<ul>
+  <li>One complete movement of an exercise.</li>
+  <li>Example: One push-up is one rep.</li>
+</ul>
+
+<h2>3. SETS</h2>
+<ul>
+  <li>A group of consecutive reps performed without rest.</li>
+  <li>Example: 10 push-ups = 1 set. Do 3 sets = 30 push-ups.</li>
+</ul>
+
+<h2>4. REST PERIOD</h2>
+<ul>
+  <li>Time to recover between sets or exercises.</li>
+  <li>Example: 30 seconds to 2 minutes depending on intensity.</li>
+</ul>
+
+<h2>5. VOLUME</h2>
+<ul>
+  <li>Total work done in a workout.</li>
+  <li>Calculated as: <code>sets × reps × weight</code></li>
+</ul>
+
+<h2>6. INTENSITY</h2>
+<ul>
+  <li>How challenging an exercise is.</li>
+  <li>For weights, it means the load or resistance used.</li>
+</ul>
+
+<h2>7. COOL-DOWN</h2>
+<ul>
+  <li>Exercises or stretches to relax muscles after working out.</li>
+  <li>Examples: Light stretching or walking.</li>
+</ul>
+</form>
+    </div>
+    <div id="About">
+      <button id="Back6">Back</button>
+      <form>
+      <h1>About Us</h1>
+
+<p>Welcome to <strong>FIT-NATION</strong>, your go-to app for achieving your fitness goals. We’re here to make fitness simple, accessible, and fun for everyone.</p>
+
+<h2>Our Mission</h2>
+<p>To inspire healthier lifestyles through tailored workout plans, progress tracking, and community support.</p>
+
+<h2>Why Choose Us?</h2>
+<ul>
+  <li><strong>Easy to Use:</strong> Designed for all fitness levels.</li>
+  <li><strong>Proven Results:</strong> Science-backed programs for real progress.</li>
+</ul>
+
+<p>Start your journey to a stronger, healthier you today with <strong>FIT-NATION</strong>!</p>
+</form>
+    </div>
+  <div id="HomePage">
+      <nav>
+    <!-- Hamburger Menu -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul id="nav-links">
+      <li><a href="#" id="Basiclink">BASIC KNOWLEDGE</a></li>
+      <br>
+      <li><a href="#" id="Aboutlink">ABOUT</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="Title">FIT-NATION</h1>
+  <button id="Workout-btn">WORKOUT</button>
+  <label for="Comming Soon">Comming Soon</label>
+  <button id="Track-btn" disabled>TRACK</button>
+  <button id="Tipsbtn">TIPS</button>
+  <button id="Goalbtn">SET GOAL</button>
+  </div>
+  <div id="Tipspage">
+    <button id="Backtips">Back</button>
+    <h3 id="tipstricks">1.Create a routine</h3>
+    <ul id="tipstricks">
+      <li>Schedule your Workous for specific days & times</li>
+      <li>Start with 3-5 days a week for 30-45mins (for begginers)</li>
+    </ul>
+    <h3 id="warmup">2.Warm up properly</h3>
+    <ul id="warmup">
+      <li>Warm up atleast 4-5min</li>
+    </ul>
+    <h3 id="consistent">3. Stay consistent</h3>
+    <ul id="consistent">
+      <li>Build small Goals first to keep your motivation</li>
+      <li>Build a habit of sticking to your schedule</li>
+    </ul>
+    <h3 id="sleep">4.Rest & Recover</h3>
+    <ul id="sleep">
+      <li>Get 8-9H sleep. Sleep is veryimportant for muscle building</li>
+    </ul>
+    <h3 id="fuelbody">5.Fuel your body</h3>
+    <ul id="fuelbody">
+      <li>Eat enough protein, carbs & healthy fats to support your energy & muscle growth</li>
+    </ul>
+   
+  </div>
+  
+   <div id="Goalpage">
+   <button id="Backgoal">Back</button>
+    <input type="text" id="TaskList" placeholder="Set your goal...">
+ <button id="AddTask">Add</button>
+
+ <div id="ListContainer">
+   <div id="TextList">TODAY'S GOALS:</div>
+ </div>
+ </div>
+  
+  <div id="WorkoutPage">
+    <button id="Backbtn">Back</button>
+    <h3 id="Selectlevel">
+      SELECT YOUR EXPERIENCE LEVEL 
+    </h3>
+    <button id="BegginerBtn">BEGGINER</button>
+    <button id="IntermediateBtn">INTERMEDIATE</button>
+    <button id="ExpertBtn">EXPERT</button>
+  </div>
+  
+  <div id="BegginerPage">
+    <button id="Backbtn2">Back</button>
+    <h1>WORKOUT PLAN</h1>
+    <h3>DAY 1: Full Body</h3>
+    <h4>WARM UP:</h4>
+    <ul>
+      <li>Jumping Jacks - 1min</li>
+      <li>High Knees - 1min </li>
+      <li>Arm Circles - 1min</li>
+      <li>Light Jogging - 1min</li>
+      <li>Body Weight Squats - 1min</li>
+    </ul>
+   <hr />
+   <h4>PUSHUPS: 3 Sets of 8-12 Reps</h4>
+   <img id="Pushup" src="push-up.gif" alt="push-up.gif" height="300px" width="300px">
+   <hr />
+   <h4>PLANK HOLD: 3 Sets of 20-30S</h4>
+   <img id="Plank" src="plank.jpg" alt="plank.jpg" height="300px" width="300px">
+   <hr />
+   <h4>SQUATS: 3 Sets of 12-15 Reps</h4>
+   <img id="BwSquats" src="bodyweight-squat.gif" alt="bodyweight-squat.gif" height="300px" width="300px">
+   <hr />
+   <h4>GLUTE BRIDGES: 3 Sets of 12-15 Reps</h4>
+   <img id="Glutebridges" src="glute-bridges.gif" alt="glute-bridges.gif" height="300px" width="300px">
+   <hr />
+    
+  <h3 id="finish">DAY 1 FINISH</h3>
+  
+  <hr />
+    
+  <h3>DAY 2: CORE & LOWER BODY</h3>
+  <br>
+  <h4>LEG RAISES: 3 Sets of 10-12 Reps</h4>
+  <img id="legraises" src="legraises.gif" alt="legraises.gif" height="300px" width="300px">
+  <hr />
+  <h4>SIDE PLANK(EACH SIDE): 3 Sets of 30s</h4>
+  <img id="sideplank" src="Side-Plank.png" alt="Side-Plank.png" height="300px" width="300px">
+  <hr />
+  <h4>LUNGES: 3 Sets of 8-10 Reps(Each leg)</h4>
+  <img id="lunges" src="lunges.gif" alt="lunges.gif" height="300px" width="300px">
+  <hr />
+  <h4>CALF RAISES: 3 Sets of 15-20 Reps</h4>
+  <img id="calfraises" src="calf-raise.jpg" alt="calf-raise.jpg" height="300px" width="300px">
+  <hr />
+  <h3 id="finish">DAY 2 FINISH</h3>
+  <hr />
+  <h3 id="finish">DAY 3: REST OR LIGHT CARDIO</h3>
+   <hr />
+    <h3>DAY 4: UPPER BODY & CORE</h3>
+    <br>
+    
+  <h4>PUSHUPS: 3 Sets of 8-12 Reps</h4>
+  <img id="Pushup" src="push-up.gif" alt="push-up.gif" height="300px" width="300px">
+  <hr />
+  <h4>MOUNTAIN CLIMBERS: 3 Sets of 15-20s</h4>
+  <img id="mountainclimbers" src="mountain-climbers.gif" alt="mountain-climbers.gif" height="300px" width="300px">
+  <hr />
+  <h4>SUPERMAN HOLD: 3 Sets of 15-20s</h4>
+  <img id="supermanhold" src="supermanhold.jpg" alt="supermanhold.jpg" height="300px" width="300px">
+  <hr />
+  <h4>PLANK: 3 Sets of 20-30s</h4>
+  <img id="Plank" src="plank.jpg" alt="plank.jpg" height="300px" width="300px">
+  <hr />
+  <h3 id="finish">DAY 4 FINISH</h3>
+  <hr />
+  <h3>DAY 5: FULL BODY CARDIO</h3>
+  <br>
+  <h4>BURPEES: 3 Sets of 10 Reps</h4>
+  <img id="burpees" src="burpees.gif" alt="burpees.gif" height="300px" width="300px">
+  <hr />
+  <h4>●HIGH KNEES: 3 Sets of 20-30s</h4>
+  <hr />
+  <h4>SKATER HOP: 3 Sets of 10 Reps(per slide)</h4>
+  <img id="skaterhop" src="skaterhop.gif" alt="skaterhop.gif" height="300px" width="300px">
+  <hr />
+  <h4>JUMP SQUATS: 3 Sets of 10-15 Reps</h4>
+  <img id="jumpsquats" src="jump-squats.gif" alt="jump-squats.gif" height="300px" width="300px">
+  <hr />
+  <h3 id="finish">DAY 5 FINISH</h3>
+  <hr />
+  <h3>DAY 6: FLEXIBILITY</h3>
+  <br>
+  <h4>●PERFORM EACH STRETCH 20-30S, 2-3 ROUNDS</h4>
+  <ol>
+    <li>FORWARD FOLD STRETCH</li>
+    <img id="forwardbend" src="Forward-Bend.gif" alt="Forward-Bend.gif" height="300px" width="300px">
+    <hr />
+    <li>CAT-COW STRETCH</li>
+    <img id="catcowpose" src="cat-cow-pose.gif" alt="cat-cow-pose.gif" height="300px" width="300px">
+    <hr />
+    <li>CHILD'S POSE</li>
+    <img id="childpose" src="child-pose.gif" alt="child-pose.gif" height="300px" width="300px">
+    <hr />
+  </ol>
+  <h3 id="finish">DAY 6 FINISH</h3>
+  <hr />
+  <h3 id="finish">DAY 7 REST,RECOVER & REPEAT</h3>
+  <hr />
+  <h5>■DO THIS WORKOUTS FOR ATLEAST 2 MONTHS TO SEE RESULTS. REMEMBER CONSISTENCY IS THE KEY 🗿</h5>
+  
+  </div>
+  
+  <div id="IntermediatePage">
+    <button id="Backbtn3">Back</button>
+     <h1>WORKOUT PLAN</h1>
+ <h3>DAY 1: Upper Body</h3>
+ <h4>WARM UP:</h4>
+ <ul>
+   <li>Jumping Jacks - 1min</li>
+   <li>High Knees - 1min </li>
+   <li>Arm Circles - 1min</li>
+   <li>Mountain Climbers - 1min</li>
+   <li>Body Weight Squats - 1min</li>
+ </ul>
+ <hr />
+ <h4>PUSHUPS: 3 Sets of 15-20 Reps</h4>
+ <img id="Pushup" src="push-up.gif" alt="push-up.gif" height="300px" width="300px">
+ <hr />
+ <h4>PIKE PUSHUPS: 3 Sets of 10-15 Reps</h4>
+ <img id="pikepushups" src="pikepushups.gif" alt="pikepushups.gif" height="300px" width="300px">
+ <hr />
+ <h4>PLANK: 3 Sets of 30-60s</h4>
+<img id="Plank" src="plank.jpg" alt="plank.jpg" height="300px" width="300px">
+<hr />
+<h4>SUPERMAN HOLD: 3 Sets of 20-30s</h4>
+<img id="supermanhold" src="supermanhold.jpg" alt="supermanhold.jpg" height="300px" width="300px">
+<hr />
+<h3 id="finish">DAY 1 FINISH</h3>
+<hr />
+  <h3>DAY 2: LOWER BODY & CORE</h3>
+  <br>
+  <h4>BULGARIAN SPLIT SQUATS: 3 Sets of 8-10 Reps(Use a chair)</h4>
+  <img id="bulgariansplitsquat" src="bulgarian-split-squat.gif" alt="bulgarian-split-squat.gif" height="300px" width="300px">
+  <hr />
+  <h4>JUMP SQUATS: 3 Sets of 15-20 Reps</h4>
+<img id="jumpsquats" src="jump-squats.gif" alt="jump-squats.gif" height="300px" width="300px">
+<hr />
+   <h4>GLUTE BRIDGES WITH HOLD: 3 Sets of 15-20 Reps(Hold for 3s at the top)</h4>
+   <img id="Glutebridges" src="glute-bridges.gif" alt="glute-bridges.gif" height="300px" width="300px">
+   <hr />
+   <h4>BICYCLE CRUNCHES: 3 Sets of 15 Reps</h4>
+   <img id="bicyclecrunche" src="bicyclecrunche.gif" alt="bicyclecrunche.gif" height="300px" width="300px">
+   <hr />
+   <h3 id="finish">DAY 2 FINISH</h3>
+   <hr />
+   <h3>DAY 3: CARDIO & ENDURANCE</h3>
+   <br>
+     <h4>BURPEES: 3 Sets of 15-20 Reps</h4>
+  <img id="burpees" src="burpees.gif" alt="burpees.gif" height="300px" width="300px">
+  <hr />
+  <h4>SKATER HOP: 3 Sets of 15 Reps(per slide)</h4>
+<img id="skaterhop" src="skaterhop.gif" alt="skaterhop.gif" height="300px" width="300px">
+<hr />
+ <h4>●HIGH KNEES WITH ARM CIRCLES: 3 Sets of 30-40s</h4>
+ <hr />
+ <h4>MOUNTAIN CLIMBERS: 3 Sets of 20-25s</h4>
+<img id="mountainclimbers" src="mountain-climbers.gif" alt="mountain-climbers.gif" height="300px" width="300px">
+<hr />
+<h3 id="finish">DAY 3 FINISH</h3>
+<hr />
+<h3>DAY 4: UPPER BODY & CORE</h3>
+<br>
+<h4>DIAMOND PUSHUPS: 3 Sets of 10 Reps</h4>
+<img id="diamondpushups" src="diamond-pushup.gif" alt="diamond-pushup.gif" height="300px" width="300px">
+<hr />
+  <h4>SIDE PLANK(EACH SIDE): 3 Sets of 30-40s</h4>
+  <img id="sideplank" src="Side-Plank.png" alt="Side-Plank.png" height="300px" width="300px">
+  <hr />
+  <h4>DIPS: 3 Sets of 15-20 Reps</h4>
+  <img id="dips" src="dips.gif" alt="dips.gif" height="300px" width="300px">
+  <hr />
+  <h4>HOLLOW BODY HOLD: 3 Sets of 20-30s</h4>
+  <img id="hollowbodyhold" src="hollowbodyhold.gif" alt="hollowbodyhold.gif" height="300px" width="300px">
+  <hr />
+<h3 id="finish">DAY 4 FINISH</h3>
+<hr />
+  <h3>DAY 5: FULL BODY & CORE</h3>
+  <br>
+   <h4>PUSHUPS: 3 Sets of 10-15 Reps</h4>
+ <img id="Pushup" src="push-up.gif" alt="push-up.gif" height="300px" width="300px">
+ <hr />
+  <h4>LUNGES: 3 Sets of 10-12 Reps(Each leg)</h4>
+<img id="lunges" src="lunges.gif" alt="lunges.gif" height="300px" width="300px">
+<hr />
+<h4>SIDE PLANK HIP DIPS: 3 Sets of 12-15 Reps</h4>
+<img id="sidehipdips" src="Side-plank-Hip-Abduction.gif" alt="Side-plank-Hip-Abduction.gif" height="300px" width="300px">
+<hr />
+<h4>RUSSIAN TWISTS(WEIGHT OPTIONAL): 3 Sets of 15 Reps</h4>
+<img id="russiantwists" src="russian-twist.gif" alt="russian-twist.gif" height="300px" width="300px">
+<hr />
+<h3 id="finish">DAY 5 FINISH</h3>
+<hr />
+<h3>DAY 6: FLEXIBILITY</h3>
+<br>
+ <h4>●PERFORM EACH STRETCH 30-40S, 2-3 ROUNDS</h4>
+ <ol>
+   <li>FORWARD FOLD STRETCH</li>
+   <img id="forwardbend" src="Forward-Bend.gif" alt="Forward-Bend.gif" height="300px" width="300px">
+   <hr />
+   <li>CAT-COW STRETCH</li>
+   <img id="catcowpose" src="cat-cow-pose.gif" alt="cat-cow-pose.gif" height="300px" width="300px">
+   <hr />
+   <li>CHILD'S POSE</li>
+   <img id="childpose" src="child-pose.gif" alt="child-pose.gif" height="300px" width="300px">
+   <hr />
+   <li>SEATED GLUTE STRETCH</li>
+   <img id="childpose" src="seated-glute-stretch.gif" alt="seated-glute-stretch.gif" height="300px" width="300px">
+ </ol>
+ <hr />
+  <h3 id="finish">DAY 6 FINISH</h3>
+ <hr />
+ <h3 id="finish">DAY 7 REST,RECOVER & REPEAT</h3>
+ <hr />
+ <h5>■DO THIS WORKOUTS FOR ATLEAST 2 MONTHS TO SEE RESULTS. REMEMBER CONSISTENCY IS THE KEY 🗿</h5>
+  </div>
+  
+  <div id="ExpertPage">
+    <button id="Backbtn4">Back</button>
+         <h1>WORKOUT PLAN</h1>
+     <h3>DAY 1: Upper Body & Core</h3>
+     <h4>WARM UP:</h4>
+     <ul>
+       <li>Jumping Jacks - 1min</li>
+       <li>Shoulder taps plank- 1min </li>
+       <li>Lunges with Arm Swings - 1min</li>
+       <li>Burpees - 1min</li>
+       <li>Squats to hip stretch - 1min</li>
+     </ul>
+     <hr />
+     <h4>ARCHER PUSHUPS: 3 Sets of 10 Reps</h4>
+     <img id="archerpushups" src="archerpushups.gif" alt="archerpushups.gif" height="300px" width="300px">
+     <hr />
+     <h4>HANDSTAND PUSHUPS: 3 Sets of 10 Reps</h4>
+    <img id="handstand" src="handstand.gif" alt="handstand.gif" height="300px" width="300px">
+    <hr />
+     <h4>SIDE PLANK(EACH SIDE): 3 Sets of 60s</h4>
+     
+ <img id="sideplank" src="Side-Plank.png" alt="Side-Plank.png" height="300px" width="300px">
+ <hr />
+    <h4>SUPERMAN EXTENSION:  3 Sets of 15 Reps</h4> 
+    <img id="supermanhold" src="Superman.gif" alt="Superman.gif" height="300px" width="300px">
+    <hr />
+    <h4>L-SIT: 3 Sets of 20s</h4>
+    <img id="supermanhold" src="Lsit.gif" alt="Lsit.gif" height="300px" width="300px">
+    <hr />
+      <h3 id="finish">DAY 1 FINISH</h3>
+  <hr />
+  <h3>DAY 2: LOWER BODY & CORE</h3>
+  <br>
+<h4>PISTOL SQUATS: 3 Sets of 6-8 Reps per Leg</h4>
+<img id="supermanhold" src="pistol-squats.gif" alt="pistol-squats.gif" height="300px" width="300px">
+<hr />
+<h4>JUMP Squats: 3 Sets of 10 Reps per Leg</h4>
+<img id="supermanhold" src="jump-squats.gif" alt="jump-squats.gif" height="300px" width="300px">
+<hr />
+<h4>BULGARIAN SPLIT SQUATS WITH HOLD: 3 Sets of 8-10 Reps per Leg</h4>
+<img id="bulgariansplitsquat" src="bulgarian-split-squat.gif" alt="bulgarian-split-squat.gif" height="300px" width="300px">
+<hr />
+<h4>GLUTE BRIDGES: 3 Sets of 12-15 Reps</h4>
+<img id="supermanhold" src="glute-bridges.gif" alt="glute-bridges.gif" height="300px" width="300px">
+<hr />
+<h4>V-Ups: 3 Sets of 10-12 Reps</h4>
+<img id="supermanhold" src="Vups.gif" alt="Vups.gif" height="300px" width="300px">
+<hr />
+ <h3 id="finish">DAY 2 FINISH</h3>
+ <hr />
+
+<h3>DAY 3: HIGH INTENSITY CARDIO</h3>
+<br>
+<h4>BURPEES: 3 Sets of 15 Reps</h4>
+<img id="burpees" src="burpees.gif" alt="burpees.gif" height="300px" width="300px">
+<hr />
+
+<h4>MOUNTAIN CLIMBERS (Fast): 3 Sets of 30s</h4>
+<img id="supermanhold" src="mountain-climbers.gif" alt="mountain-climbers.gif" height="300px" width="300px">
+<hr />
+
+<h4>SKATER HOPS TO SQUAT JUMP: 3 Sets of 8-10 Reps</h4>
+<img id="skaterhop" src="skaterhop.gif" alt="skaterhop.gif" height="300px" width="300px">
+<hr />
+<h4>PUSHUP JACKS: 3 Sets of 10 Reps</h4>
+<img id="supermanhold" src="push-up-jack-muscles.gif" alt="push-up-jack-muscles.gif" height="300px" width="300px">
+<hr />
+<h4>PLANK: 3 Sets of 60s</h4>
+<img id="Plank" src="plank.jpg" alt="plank.jpg" height="300px" width="300px">
+<hr />
+ <h3 id="finish">DAY 3 FINISH</h3>
+ <hr />
+
+<h3>DAY 4: UPPER BODY & MOBILITY</h3>
+
+<h4>ONE-ARM PUSH-UPS: 3 Sets of 6-8 Reps per Side</h4>
+<img id="supermanhold" src="onearmpushups.gif" alt="onearmpushups.gif" height="300px" width="300px">
+<hr />
+
+<h4>DIAMOND PUSH-UPS (Triceps Focus): 3 Sets of 10-12 Reps</h4>
+<img id="supermanhold" src="diamond-pushup.gif" alt="diamond-pushup.gif" height="300px" width="300px">
+<hr />
+
+<h4>SIDE PLANK WITH HIP DIP: 3 Sets of 12-15 Dips per Side</h4>
+<img id="supermanhold" src="Side-plank-Hip-Abduction.gif" alt="Side-plank-Hip-Abduction.gif" height="300px" width="300px">
+<hr />
+<h4>SUPERMAN EXTENSION: 3 Sets of 12-15 Reps</h4>
+<img id="supermanhold" src="Superman.gif" alt="Superman.gif" height="300px" width="300px">
+<hr />
+<h4>HOLLOW BODY ROCK: 3 Sets of 20s</h4>
+<img id="supermanhold" src="hollowbodyhold.gif" alt="hollowbodyhold.gif" height="300px" width="300px">
+<hr />
+ <h3 id="finish">DAY 4 FINISH</h3>
+ <hr />
+ 
+<h3>DAY 5: FULL BODY & CORE</h3>
+<br>
+<h4>CLAP PUSH-UPS: 3 Sets of 8-10 Reps</h4>
+<img id="supermanhold" src="clapping-push-ups.gif" alt="clapping-push-ups.gif" height="300px" width="300px">
+<hr />
+
+<h4>EXPLOSIVE BOX JUMPS: 3 Sets of 8-10 Reps</h4>
+<img id="supermanhold" src="boxjump.gif" alt="boxjump.gif" height="300px" width="300px">
+<hr />
+<h4>SINGLE-LEG ROMANIAN DEADLIFTS: 3 Sets of 10-12 Reps per Leg</h4>
+<img id="supermanhold" src="single-leg-deadlift.gif" alt="single-leg-deadlift.gif" height="300px" width="300px">
+<hr />
+
+<h4>RUSSIAN TWISTS (With Weight): 3 Sets of 15 Reps per Side</h4>
+<img id="russiantwists" src="russian-twist.gif" alt="russian-twist.gif" height="300px" width="300px">
+<hr />
+
+<h4>PLANK: 3 Sets of 60s</h4>
+<img id="supermanhold" src="plank.jpg" alt="plank.jpg" height="300px" width="300px">
+<hr />
+ <h3 id="finish">DAY 5 FINISH</h3>
+ <hr />
+
+<h3>DAY 6: FLEXIBILITY</h3>
+<br>
+<h4>STANDING HAMSTRING STRETCH: 2-3 Rounds of 30-40 Seconds</h4>
+<img id="supermanhold" src="standing-hamstring-stretch.gif" alt="standing-hamstring-stretch.gif" height="300px" width="300px">
+<hr />
+
+<h4>PIGEON POSE STRETCH: 2-3 Rounds of 30-40 Seconds</h4>
+<img id="supermanhold" src="pigeon-pose.gif" alt="pigeon-pose.gif" height="300px" width="300px">
+<hr />
+<h4>SIDE LUNGE STRETCH: 2-3 Rounds of 30-40 Seconds</h4>
+<img id="supermanhold" src="sidelunges.gif" alt="sidelunges.gif" height="300px" width="300px">
+<hr />
+ <h3 id="finish">DAY 6 FINISH</h3>
+ <hr />
+ <h3 id="finish">DAY 7 REST,RECOVER & REPEAT</h3>
+ <hr />
+ <h5>■DO THIS WORKOUTS FOR ATLEAST 2 MONTHS TO SEE RESULTS. REMEMBER CONSISTENCY IS THE KEY 🗿</h5>
+  </div>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
