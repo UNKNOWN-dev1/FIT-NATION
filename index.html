@@ -83,6 +83,9 @@
 </form>
     </div>
   <div id="HomePage">
+    <img id="fitness" src="fitnation.png" alt="fitnation.png" height="100px" width="100px">
+    <button id="beforeAfterButton">Before & After</button>
+    <button id="dietBtn">Diet</button>
       <nav>
     <!-- Hamburger Menu -->
     <div class="hamburger" id="hamburger">
@@ -101,8 +104,7 @@
 
   <h1 id="Title">FIT-NATION</h1>
   <button id="Workout-btn">WORKOUT</button>
-  <label for="Comming Soon">Comming Soon</label>
-  <button id="Track-btn" disabled>TRACK</button>
+  <button id="Track-btn">TRACK</button>
   <button id="Tipsbtn">TIPS</button>
   <button id="Goalbtn">SET GOAL</button>
   </div>
@@ -505,7 +507,76 @@
  <hr />
  <h5>■DO THIS WORKOUTS FOR ATLEAST 2 MONTHS TO SEE RESULTS. REMEMBER CONSISTENCY IS THE KEY 🗿</h5>
   </div>
+   
+</div>
+
+<div id="BeforeAfterPage" style="display: none; text-align: center;">
+   <button id="backToHome">Back</button>
+   <h2>Before and After Pictures</h2>
+   
+   <div>
+      <label for="beforeImageUpload">Before:</label>
+      <input type="file" id="beforeImageUpload" accept="image/*">
+      <div id="beforeImageContainer" class="image-container">
+         <span>+</span>
+      </div>
+      <button id="deleteBeforeImage" class="delete-btn" style="display: none;">Delete</button>
+   </div>
+
+   <div>
+      <label for="afterImageUpload">After:</label>
+      <input type="file" id="afterImageUpload" accept="image/*">
+      <div id="afterImageContainer" class="image-container">
+         <span>+</span>
+      </div>
+      <button id="deleteAfterImage" class="delete-btn" style="display: none;">Delete</button>
+   </div>
+</div>
   
+
+<div id="dietPage" style="display: none; text-align: center;">
+  <h2>Select Your Details</h2>
+  <label for="weightInput">Weight (kg):</label>
+  <input type="number" id="weightInput" placeholder="Enter your weight">
+  <br>
+  <label for="ageInput">Age (years):</label>
+  <input type="number" id="ageInput" placeholder="Enter your age">
+  <br>
+  <label for="heightInput">Height (cm):</label>
+  <input type="number" id="heightInput" placeholder="Enter your height">
+  <br><br>
+  <button id="confirmBtn">Confirm</button>
+  <button id="saveBtn">Save</button>
+  <div id="dietPlan" style="margin-top: 20px; display: none;">
+    <h3 id="dietplan">Your Diet Plan:</h3>
+    <p id="dietDetails"></p>
+  </div>
+  <button id="backToHomeBtn">Back</button>
+</div>
+
+
+<div id="trackPage" style="display: none; text-align: center;">
+  <h2>Track Your Activity</h2>
+  <label for="activityType">Select Activity:</label>
+  <select id="activityType">
+    <option value="walk">Walk</option>
+    <option value="run">Run</option>
+    <option value="workout">Workout</option>
+  </select>
+  <br><br>
+  <button id="startTrackingBtn">Start Tracking</button>
+  <button id="stopTrackingBtn" style="display: none;">Stop Tracking</button>
+  <br><br>
+
+  <div id="trackingInfo" style="display: none;">
+    <h3>Tracking Details</h3>
+    <p id="activityDetails"></p>
+    <p id="distanceCovered" style="display: none;">Distance: <span id="distanceValue">0</span> meters</p>
+    <p id="timeElapsed">Time: <span id="timerValue">0:00</span></p>
+  </div>
+
+  <button id="backToHomeTrackBtn">Back</button>
+</div>
   
   <script src="main.js"></script>
 </body>
