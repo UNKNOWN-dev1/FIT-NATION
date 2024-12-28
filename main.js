@@ -384,117 +384,104 @@ backToHomeBtn.addEventListener("click", () => {
   HomePage.style.display = "block";
 });
 
+const homePage = document.getElementById("HomePage");
+const trackingPage = document.getElementById("trackingPage");
 const trackBtn = document.getElementById("Track-btn");
-const trackPage = document.getElementById("trackPage");
-const homepage = document.getElementById("HomePage");
-const activityType = document.getElementById("activityType");
+const backToHome = document.getElementById("backToHome2");
 const startTrackingBtn = document.getElementById("startTrackingBtn");
 const stopTrackingBtn = document.getElementById("stopTrackingBtn");
 const trackingInfo = document.getElementById("trackingInfo");
-const activityDetails = document.getElementById("activityDetails");
 const distanceCovered = document.getElementById("distanceCovered");
-const distanceValue = document.getElementById("distanceValue");
-const timerValue = document.getElementById("timerValue");
-const backToHomeTrackBtn = document.getElementById("backToHomeTrackBtn");
+const activityDetails = document.getElementById("activityDetails");
 
-let timerInterval;
-let timerSeconds = 0;
-let trackingActivity = null;
-let startPosition = null;
-let distance = 0;
+let watchId = null;
+let totalDistance = 0;
+let lastPosition = null;
 
-// Navigate to track page
+// Navigate to Tracking Page
 trackBtn.addEventListener("click", () => {
-  homepage.style.display = "none";
-  trackPage.style.display = "block";
+  homePage.style.display = "none";
+  trackingPage.style.display = "block";
 });
 
-// Start tracking
+// Navigate back to Home Page
+backToHome.addEventListener("click", () => {
+  trackingPage.style.display = "none";
+  homePage.style.display = "block";
+});
+
+// Start Tracking
 startTrackingBtn.addEventListener("click", () => {
-  const selectedActivity = activityType.value;
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        // Permission granted, start tracking
+        startTrackingBtn.style.display = "none";
+        stopTrackingBtn.style.display = "inline-block";
+        trackingInfo.style.display = "block";
 
-  if (selectedActivity === "walk" || selectedActivity === "run") {
-    // Use Geolocation API for outdoor activities
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          startPosition = position.coords;
-          startTimer();
-          startTrackingBtn.style.display = "none";
-          stopTrackingBtn.style.display = "block";
-          trackingInfo.style.display = "block";
-          distanceCovered.style.display = "block";
-          activityDetails.innerText = `Activity: ${selectedActivity}`;
-        },
-        (error) => {
-          alert("Geolocation not available or permission denied.");
-        }
-      );
-    } else {
-      alert("Geolocation not supported by this browser.");
-    }
-  } else if (selectedActivity === "workout") {
-    // For workouts, track time only
-    startTimer();
-    startTrackingBtn.style.display = "none";
-    stopTrackingBtn.style.display = "block";
-    trackingInfo.style.display = "block";
-    activityDetails.innerText = `Activity: Workout`;
-    distanceCovered.style.display = "none";
+        // Reset distance and start tracking
+        totalDistance = 0;
+        lastPosition = position.coords;
+
+        watchId = navigator.geolocation.watchPosition(
+          (position) => {
+            const newCoords = position.coords;
+            if (lastPosition) {
+              const distance = calculateDistance(
+                lastPosition.latitude,
+                lastPosition.longitude,
+                newCoords.latitude,
+                newCoords.longitude
+              );
+              totalDistance += distance;
+              distanceCovered.innerText = `Distance Covered: ${totalDistance.toFixed(2)} m`;
+            }
+            lastPosition = newCoords;
+          },
+          (error) => {
+            alert("Error getting location: " + error.message);
+          },
+          { enableHighAccuracy: true }
+        );
+
+        const activityType = document.getElementById("activityType").value;
+        activityDetails.innerText = `Activity: ${activityType}`;
+      },
+      (error) => {
+        alert("Geolocation not available or permission denied.");
+      }
+    );
+  } else {
+    alert("Geolocation not supported by your browser.");
   }
 });
 
-// Stop tracking
+// Stop Tracking
+// Stop Tracking Functionality
 stopTrackingBtn.addEventListener("click", () => {
-  clearInterval(timerInterval);
-
-  if (trackingActivity === "walk" || trackingActivity === "run") {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const currentPosition = position.coords;
-      distance += calculateDistance(
-        startPosition.latitude,
-        startPosition.longitude,
-        currentPosition.latitude,
-        currentPosition.longitude
-      );
-      distanceValue.innerText = distance.toFixed(2);
-    });
+  if (watchId !== null) {
+    navigator.geolocation.clearWatch(watchId); // Stop watching position
+    watchId = null; // Clear the watch ID
+    alert("Tracking stopped.");
+  } else {
+    alert("Tracking is not active.");
   }
 
-  startTrackingBtn.style.display = "block";
+  // Update UI for stopped state
+  startTrackingBtn.style.display = "inline-block";
   stopTrackingBtn.style.display = "none";
-  alert("Tracking stopped!");
 });
 
-// Back to homepage
-backToHomeTrackBtn.addEventListener("click", () => {
-  trackPage.style.display = "none";
-  homepage.style.display = "block";
-  resetTracking();
+// Clear Distance Functionality
+const clearDistanceBtn = document.getElementById("clearDistanceBtn");
+clearDistanceBtn.addEventListener("click", () => {
+  totalDistance = 0; // Reset total distance
+  distanceCovered.innerText = `Distance Covered: ${totalDistance.toFixed(2)} m`; // Update UI
+  lastPosition = null; // Reset last position
+  alert("Distance cleared.");
 });
-
-// Timer function
-function startTimer() {
-  timerSeconds = 0;
-  timerInterval = setInterval(() => {
-    timerSeconds++;
-    const minutes = Math.floor(timerSeconds / 60);
-    const seconds = timerSeconds % 60;
-    timerValue.innerText = `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
-  }, 1000);
-}
-
-// Reset tracking data
-function resetTracking() {
-  clearInterval(timerInterval);
-  timerValue.innerText = "0:00";
-  distanceValue.innerText = "0";
-  trackingInfo.style.display = "none";
-  distance = 0;
-  startPosition = null;
-}
-
-// Calculate distance between two coordinates
+// Function to calculate distance between two coordinates
 function calculateDistance(lat1, lon1, lat2, lon2) {
   const R = 6371e3; // Radius of the Earth in meters
   const φ1 = (lat1 * Math.PI) / 180;
@@ -506,6 +493,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
     Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
     Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c;
 
-  return R * c; // Distance in meters
+  return distance; // Distance in meters
 }
