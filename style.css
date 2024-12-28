@@ -1,12 +1,11 @@
 body {
     font-size: 15pt;
-    background-image: url(backgroundimg.jpg);
+    background: linear-gradient(90deg, #000428, #004e92);
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
 }
 #HomePage{
   display: block;
@@ -26,32 +25,121 @@ h1{
   color: white;
   text-shadow: 4px 4px 6px #000;
 }
+#Title{
+  position: relative;
+  top: -130px;
+}
 
-label{
+label#commingsoon{
   position: relative;
   top: 215px;
   left: 144px;
   font-size: 15px;
   color: white;
   text-shadow: 4px 4px 6px #000;
-  
+  position: relative;
+  top: 150px;
 }
-#Workout-btn, #Track-btn, #Tipsbtn, #Goalbtn{
+label{
+  color: white;
+  text-shadow: 4px 4px 6px #000;
+}
+#backToHome{
+  position: relative;
+  right: 180px;
+}
+#backToHomeBtn{
+position: fixed;
+top: 1px;
+}
+#backToHomeTrackBtn{
+  position: fixed;
+  top: 1px;
+  right: 360px;
+}
+
+
+#Workout-btn, #Track-btn, #Tipsbtn, #Goalbtn, #beforeAfterButton,#dietBtn{
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 150px;
+  top: 80px;
   left: 135px;
   width: 120px;
   height: 40px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: aliceblue;
+  background: linear-gradient(90deg, #00ff87, #1cb5e0);
+  border: none;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 255, 135, 0.4);
 }
+#Track-btn{
+  color: black;
+}
+#startTrackingBtn{
+  background: linear-gradient(90deg, #00ff87, #1cb5e0);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 150px;
+}
+#stopTrackingBtn{
+  background: linear-gradient(90deg, #240b36, #c31432);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 150px;
+}
+
+
 #Goalbtn{
   position: relative;
   top: 220px;
+}
+#beforeAfterButton{
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  left: -10px;
+  top: 650px;
+}
+#dietBtn{
+  display: block;
+margin: auto;
+text-align: center;
+position: relative;
+left: -10px;
+top: 670px;
+}
+ #Tipsbtn, #Goalbtn, #beforeAfterButton,#dietBtn{
+   position: relative;
+   top: 90px;
+ }
+#beforeAfterButton,#dietBtn{
+   position: relative;
+   top: 580px;
+ }
+#dietBtn{
+  position: relative;
+  top: 600px;
+  
+}
+
+#BeforeAfterPage{
+  display: none;
 }
 
 #Tipsbtn{
@@ -69,9 +157,11 @@ label{
   left: 120px;
   width: 120px;
   height: 40px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: royalblue;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 210, 255, 0.4);
   margin: 20px;
 }
 #IntermediateBtn{
@@ -83,9 +173,11 @@ label{
   left: 120px;
   width: 120px;
   height: 40px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: lightyellow;
+  background: linear-gradient(90deg, #6a3093, #a044ff);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(160, 68, 255, 0.4);
   margin: 20px;
 }
 #ExpertBtn{
@@ -97,48 +189,50 @@ label{
   left: 120px;
   width: 120px;
   height: 40px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: orangered;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(255, 65, 108, 0.4);
   margin: 20px;
 }
-#Backbtn,#Backgoal{
+#Backbtn,#Backgoal,#backToHome,#backToHomeBtn,#backToHomeTrackBtn{
   border: 2px solid black;
-  background: lightblue;
-  border-radius: 23px;
+  background: linear-gradient(90deg, #2c3e50, #4ca1af);
+  border-radius: 5px;
 }
 #BegginerPage{
   display: none;
   height: 1100vh;
   max-width: 100%;
-  background: linear-gradient(cyan, purple);
+  background: linear-gradient(120deg, #3a1c71, #d76d77, #ffaf7b);
 }
 #Backbtn2,#Backtips{
   border: 2px solid black;
-  background: lightblue;
-  border-radius: 23px;
+  background: linear-gradient(90deg, #2c3e50, #4ca1af);
+  border-radius: 5px;
 }
 #IntermediatePage{
   display: none;
   height: 1380vh;
   max-width: 100%;
-  background: linear-gradient(lightyellow, purple);
+  background: linear-gradient(90deg, #2c3e50, #4ca1af);
 }
 #Backbtn3,#Back5,#Back6{
   border: 2px solid black;
-  background: lightblue;
-  border-radius: 23px;
+  background: linear-gradient(90deg, #2c3e50, #4ca1af);
+  border-radius: 5px;
 }
 #ExpertPage{
   display: none;
-  height: 1450vh;
+  height: 1660vh;
   max-width: 100%;
-  background: ghostwhite;
+  background: linear-gradient(90deg, #240b36, #c31432);
 }
 #Backbtn4{
   border: 2px solid black;
-  background: lightblue;
-  border-radius: 23px;
+  background: linear-gradient(90deg, #2c3e50, #4ca1af);
+  border-radius: 5px;
 }
 #Tipspage,#Tip,#Backtips{
   display: none;
@@ -468,7 +562,8 @@ h3#tipstricks{
 
   .hamburger {
     display: flex; /* Show hamburger menu */
-  
+    position: relative;
+    top: -75px;
   }
   nav a{
     text-decoration: none;
@@ -479,3 +574,68 @@ form{
   color: white;
   text-shadow: 2px 2px 2px #000;
 }
+#Basic{
+  height: 200vh;
+}
+.image-container {
+      width: 150px;
+      height: 150px;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      background-size: cover;
+      background-position: center;
+   }
+   .image-container span {
+      font-size: 24px;
+      color: #ccc;
+   }
+   .delete-btn {
+      margin-top: 10px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+   }
+   .delete-btn:hover {
+      background-color: #c0392b;
+   }
+   input{
+     background: linear-gradient(90deg, #240b36, #c31432);
+     color: white;
+   }
+   #confirmBtn{
+     background: linear-gradient(90deg, #240b36, #c31432);
+     color: white;
+     font-weight: bold;
+     border: none;
+     border-radius: 5px;
+   }
+   #saveBtn{
+     background: linear-gradient(90deg, #00ff87, #1cb5e0);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 255, 135, 0.4);
+   }
+   #dietplan, p{
+     color: white;
+     text-shadow: 2px 2px 4px #000;
+   }
+   #fitness{
+     position: fixed;
+     top: 100px;
+     left: 150px;
+     border: 2px solid white;
+     border-radius: 20px;
+   }
+   #Track-btn{
+     position: relative;
+     top: 105px;
+   }
+   
