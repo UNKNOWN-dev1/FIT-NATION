@@ -79,7 +79,11 @@
   <li><strong>Proven Results:</strong> Science-backed programs for real progress.</li>
 </ul>
 
-<p>Start your journey to a stronger, healthier you today with <strong>FIT-NATION</strong>!</p>
+<p>Start your journey to a stronger, healthier you today with <strong>FIT-NATION</strong>!
+
+<h4>NOTE: The tracking feature is not 100% accurate.</h4>
+
+</p>
 </form>
     </div>
   <div id="HomePage">
@@ -555,27 +559,23 @@
 </div>
 
 
-<div id="trackPage" style="display: none; text-align: center;">
+<!-- Tracking Page -->
+<div id="trackingPage" style="display: none; text-align: center;">
   <h2>Track Your Activity</h2>
-  <label for="activityType">Select Activity:</label>
   <select id="activityType">
-    <option value="walk">Walk</option>
-    <option value="run">Run</option>
-    <option value="workout">Workout</option>
+    <option value="walking">Walking</option>
+    <option value="running">Running</option>
+    <option value="cycling">Cycling</option>
   </select>
   <br><br>
   <button id="startTrackingBtn">Start Tracking</button>
-  <button id="stopTrackingBtn" style="display: none;">Stop Tracking</button>
-  <br><br>
-
-  <div id="trackingInfo" style="display: none;">
-    <h3>Tracking Details</h3>
-    <p id="activityDetails"></p>
-    <p id="distanceCovered" style="display: none;">Distance: <span id="distanceValue">0</span> meters</p>
-    <p id="timeElapsed">Time: <span id="timerValue">0:00</span></p>
+  <button id="stopTrackingBtn" style="display:none;">Stop Tracking</button>
+  <div id="trackingInfo" style="display:none;">
+    <h3 id="activityDetails"></h3>
+    <h4 id="distanceCovered">Distance Covered: 0 m</h4>
+    <button id="clearDistanceBtn">Clear</button>
   </div>
-
-  <button id="backToHomeTrackBtn">Back</button>
+  <button id="backToHome2">Back</button>
 </div>
   
   <script src="main.js"></script>
