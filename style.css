@@ -714,8 +714,8 @@ form{
    }
    #clearDistanceBtn{
      position: relative;
-     top: 350px;
-     left: -100px;
+     top: 250px;
+     left: -50px;
      background: linear-gradient(90deg, #240b36, #c31432);
      color: white;
      font-weight: bold;
