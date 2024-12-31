@@ -20,6 +20,7 @@ h3{
 }
 h1{
   text-align: center;
+  
 }
 #Title,#Selectlevel{
   color: white;
@@ -27,7 +28,7 @@ h1{
 }
 #Title{
   position: relative;
-  top: -130px;
+  top: -290px;
 }
 
 label#commingsoon{
@@ -59,12 +60,12 @@ top: 1px;
 }
 
 
-#Workout-btn, #Track-btn, #Tipsbtn, #Goalbtn, #beforeAfterButton,#dietBtn{
+#Workout-btn, #Track-btn, #Tipsbtn, #Goalbtn, #beforeAfterButton,#dietBtn,#ProgressTrackingBtn,#WorkoutProgressionBtn, #Challengebtn{
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 80px;
+  top: -140px;
   left: 135px;
   width: 120px;
   height: 40px;
@@ -75,68 +76,91 @@ top: 1px;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 255, 135, 0.4);
 }
-#Track-btn{
-  color: black;
+#ProgressTrackingBtn, #WorkoutProgressionBtn{
+  position: relative;
+  top: 200px;
+  left: 270px;
+  justify-content: space-between;
 }
-#startTrackingBtn{
+#WorkoutProgressionBtn{
+ position: relative;
+ top: 145px;
+ right: 500px;
+}
+#ProgressTrackingBtn{
+  position: relative;
+  left: 3px;
+  top: 184px;
+  
+}
+#Track-btn {
+  color: black;
+  position: relative;
+  left: 3px;
+
+}
+#trackingControls, #trackingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#startTrackingBtn, #stopTrackingBtn{
   background: linear-gradient(90deg, #00ff87, #1cb5e0);
   color: black;
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  left: 150px;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#stopTrackingBtn{
+#stopTrackingBtn {
   background: linear-gradient(90deg, #240b36, #c31432);
   color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 150px;
 }
 
+#clearDistanceBtn {
+  background: linear-gradient(90deg, #ff9f1c, #ff6b6b);
+  position: relative;
+  left: -50px;
+}
 
+#trackingInfo h3, #trackingInfo h4 {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
 #Goalbtn{
   position: relative;
-  top: 220px;
+  top: -80px;
+  left: 137px;
 }
 #beforeAfterButton{
   display: block;
   margin: auto;
   text-align: center;
   position: relative;
-  left: -10px;
-  top: 650px;
+  top: 500px;
+  left: 127px;
 }
-#dietBtn{
-  display: block;
+#Challengebtn{
+display: block;
 margin: auto;
 text-align: center;
 position: relative;
-left: -10px;
-top: 670px;
+top: 340px;
+left: -7px;
+background: linear-gradient(90deg, #240b36, #c31432);
+color: white;
+text-shadow: 2px 2px 4px #000;
 }
- #Tipsbtn, #Goalbtn, #beforeAfterButton,#dietBtn{
-   position: relative;
-   top: 90px;
- }
-#beforeAfterButton,#dietBtn{
-   position: relative;
-   top: 580px;
- }
+
 #dietBtn{
-  position: relative;
-  top: 600px;
-  
-}
+   position: relative;
+   top: 345px;
+   left: 137px;
+ }
 
 #BeforeAfterPage{
   display: none;
@@ -144,8 +168,13 @@ top: 670px;
 
 #Tipsbtn{
   position: relative;
-  top: 200px;
-  background: yellow;
+  top: -160px;
+  left: 137px;
+  background: linear-gradient(90deg, #00ff87, #1cb5e0);
+}
+#Workout-btn{
+  position: relative;
+  left: 137px;
 }
 
 #BegginerBtn{
@@ -196,43 +225,67 @@ top: 670px;
   box-shadow: 0 4px 6px rgba(255, 65, 108, 0.4);
   margin: 20px;
 }
-#Backbtn,#Backgoal,#backToHome,#backToHomeBtn,#backToHomeTrackBtn{
+#Backbtn,#Backgoal,#backToHome,#backToHomeBtn,#backToHomeTrackBtn,#BackWorkoutProgression,#BackProgressTracking,#Backbtn7{
   border: 2px solid black;
   background: linear-gradient(90deg, #2c3e50, #4ca1af);
   border-radius: 5px;
+  position: fixed;
+top: 5px;
+left: 1px;
 }
 #BegginerPage{
   display: none;
   height: 1100vh;
   max-width: 100%;
   background: linear-gradient(120deg, #3a1c71, #d76d77, #ffaf7b);
+  position: relative;
+  top: -100px;
 }
 #Backbtn2,#Backtips{
   border: 2px solid black;
   background: linear-gradient(90deg, #2c3e50, #4ca1af);
   border-radius: 5px;
+  position: fixed;
+top: 5px;
+left: 1px;
 }
+#Backbtn7{
+  position: fixed;
+  top: 5px;
+  left: 1px;
+}
+
 #IntermediatePage{
   display: none;
   height: 1380vh;
   max-width: 100%;
   background: linear-gradient(90deg, #2c3e50, #4ca1af);
+  position: relative;
+top: -100px;
 }
 #Backbtn3,#Back5,#Back6{
   border: 2px solid black;
   background: linear-gradient(90deg, #2c3e50, #4ca1af);
   border-radius: 5px;
+  position: fixed;
+top: 5px;
+left: 1px;
 }
 #ExpertPage{
   display: none;
   height: 1660vh;
   max-width: 100%;
   background: linear-gradient(90deg, #240b36, #c31432);
+  position: relative;
+top: -100px;
 }
 #Backbtn4{
   border: 2px solid black;
   background: linear-gradient(90deg, #2c3e50, #4ca1af);
   border-radius: 5px;
+  position: fixed;
+top: 5px;
+left: 1px;
 }
 #Tipspage,#Tip,#Backtips{
   display: none;
@@ -528,6 +581,7 @@ h3#tipstricks{
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
+  
 }
 
 .hamburger div {
@@ -536,6 +590,8 @@ h3#tipstricks{
   height: 3px;
   margin: 4px 0;
   transition: all 0.3s ease;
+  position: relative;
+top: -80px;
 }
 
 /* Toggle Active Menu for Small Screens */
@@ -563,7 +619,7 @@ h3#tipstricks{
   .hamburger {
     display: flex; /* Show hamburger menu */
     position: relative;
-    top: -75px;
+    top: -120px;
   }
   nav a{
     text-decoration: none;
@@ -636,9 +692,9 @@ form{
    }
    #Track-btn{
      position: relative;
-     top: 105px;
+     top: 57px;
    }
-   #backToHome2{
+   #backToHome2,#BackAchievements{
      position: fixed;
      left: -1px;
      top: 1px;
@@ -674,3 +730,199 @@ form{
      border-radius: 5px;
      height: 25px;
    }
+   #ProgressTrackingPage, #WorkoutProgressionPage {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: relative;
+  top: -50px;
+}
+
+#ProgressForm input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+#ProgressList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ProgressList li{
+  margin: 5px 0;
+  padding: 8px;
+  background: #e3e3e3;
+  border-radius: 5px;
+}
+#LogProgress{
+  background: linear-gradient(90deg, #240b36, #c31432);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  position: relative;
+  left: 120px;
+}
+#Challengepage{
+  display: none;
+}
+#challenges{
+  position: relative;
+  left: -20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-shadow: none;
+}
+#Accept{
+  background: linear-gradient(90deg, #00ff87, #1cb5e0);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 10px;
+  right: -5px;
+  height: 25px;
+}
+#Challengepage {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#completeChallenge{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#completeChallenge:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#timerContainer {
+  margin-top: 20px;
+}
+
+#timeLeft {
+  font-size: 24px;
+  color: #ff5722;
+}
+
+#completeChallenge {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+#completeChallenge:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+#challengeImage{
+  box-shadow: 4px 4px 6px;
+}
+#clearProgressBtn{
+  background: linear-gradient(90deg, #240b36, #c31432);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#saveProgressBtn{
+  background: linear-gradient(90deg, #00ff87, #1cb5e0);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#trackingPage{
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 70vh;
+  background: #002a5a;
+}
+#Achievements{
+  position: relative;
+  top: -85px;
+  left: -5px;
+} 
+nav h3 a{
+  color: #ffffff;
+  background: linear-gradient(90deg, #240b36, #c31432);
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 0px 10px;
+  text-shadow: 2px 2px 4px #000;
+  box-shadow: 4px 4px 6px #000;
+}
+#AchievementsPage{
+  display: none;
+  min-height: 100vh;
+}
+#achH1{
+  text-align: center;
+}
+#Noachievements{
+  text-align: center;
+}
+
+#achievements-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.achievement.claimed {
+  background-color: #c3e6cb;
+}
+
+.claim-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.claim-btn:disabled {
+  background-color: #ccc;
+}
+#backToHome{
+  width: 50px;
+}
