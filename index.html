@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    
+  
       <div id="Basic">
       <button id="Back5">Back</button>
       <form>
@@ -86,10 +88,14 @@
 </p>
 </form>
     </div>
+    
   <div id="HomePage">
     <img id="fitness" src="fitnation.png" alt="fitnation.png" height="100px" width="100px">
     <button id="beforeAfterButton">Before & After</button>
-    <button id="dietBtn">Diet</button>
+    <button id="dietBtn">DIET</button>
+    <button id="ProgressTrackingBtn">Progress Tracking</button>
+<button id="WorkoutProgressionBtn">Workout Progression</button>
+<button id="Challengebtn">CHALLENGE</button>
       <nav>
     <!-- Hamburger Menu -->
     <div class="hamburger" id="hamburger">
@@ -105,6 +111,14 @@
       <li><a href="#" id="Aboutlink">ABOUT</a></li>
     </ul>
   </nav>
+  
+  <nav id="Achievements">
+  
+    <h3><a href="#" id="Achievementlink">Achievements</a></h3>
+
+</div>
+  </nav>
+  
 
   <h1 id="Title">FIT-NATION</h1>
   <button id="Workout-btn">WORKOUT</button>
@@ -514,6 +528,7 @@
    
 </div>
 
+
 <div id="BeforeAfterPage" style="display: none; text-align: center;">
    <button id="backToHome">Back</button>
    <h2>Before and After Pictures</h2>
@@ -560,23 +575,98 @@
 
 
 <!-- Tracking Page -->
-<div id="trackingPage" style="display: none; text-align: center;">
+<div id="trackingPage" style="display: none; text-align: center; padding: 20px;">
   <h2>Track Your Activity</h2>
-  <select id="activityType">
-    <option value="walking">Walking</option>
-    <option value="running">Running</option>
-    <option value="cycling">Cycling</option>
-  </select>
-  <br><br>
-  <button id="startTrackingBtn">Start Tracking</button>
-  <button id="stopTrackingBtn" style="display:none;">Stop Tracking</button>
-  <div id="trackingInfo" style="display:none;">
-    <h3 id="activityDetails"></h3>
-    <h4 id="distanceCovered">Distance Covered: 0 m</h4>
-    <button id="clearDistanceBtn">Clear</button>
+  <div style="margin: 10px 0;">
+    <label for="activityType" style="font-weight: bold;">Select Activity:</label>
+    <select id="activityType">
+      <option value="walking">Walking</option>
+      <option value="running">Running</option>
+      <option value="cycling">Cycling</option>
+    </select>
   </div>
-  <button id="backToHome2">Back</button>
+  
+  <div id="trackingControls" style="margin: 20px 0;">
+    <button id="startTrackingBtn">Start Tracking</button>
+    <button id="stopTrackingBtn" style="display: none;">Stop Tracking</button>
+  </div>
+  <div id="trackingInfo" style="display: none; margin-top: 20px;">
+    <h3 id="activityDetails"></h3>
+    <h4 id="distanceCovered">Distance Covered: <span id="distanceValue">0</span> m</h4>
+    <button id="clearDistanceBtn">Clear Distance</button>
+  </div>
+  <div style="margin-top: 20px;">
+    <button id="backToHome2">Back</button>
+  </div>
 </div>
+  <!-- Add to the HomePage section -->
+
+
+<!-- New Progress Tracking Section -->
+<div id="ProgressTrackingPage" style="display:none;">
+  <button id="BackProgressTracking">Back</button>
+  <h1>Progress Tracking</h1>
+  <p>Track your fitness progress by logging your activities and improvements.</p>
+  <form id="ProgressForm">
+    <label for="exercise">Exercise:</label>
+    <input type="text" id="exercise" placeholder="E.g., Push-ups" required>
+    <label for="sets">Sets:</label>
+    <input type="number" id="sets" placeholder="Number of sets" required>
+    <label for="reps">Reps:</label>
+    <input type="number" id="reps" placeholder="Number of reps" required>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="If applicable">
+    <button type="button" id="LogProgress">Log Progress</button>
+  </form>
+  <h3>Logged Progress:</h3>
+  <button id="saveProgressBtn">Save Progress</button>
+  <ul id="progressLog" style="margin-top: 20px;"></ul>
+  <button id="clearProgressBtn" style="margin-top: 10px;">Clear Progress</button>
+</div>
+  <ul id="ProgressList"></ul>
+</div>
+
+
+<!-- New Workout Progression Section -->
+<div id="WorkoutProgressionPage" style="display:none;">
+  <button id="BackWorkoutProgression">Back</button>
+  <h1>Workout Progression Plan</h1>
+  <p>Follow this plan to gradually increase your workout intensity.</p>
+  <ul>
+    <li>Week 1-2: Start with the Beginner Plan.</li>
+    <li>Week 3-4: Transition to Intermediate Plan.</li>
+    <li>Week 5-6: Introduce additional reps or sets.</li>
+    <li>Week 7+: Begin the Expert Plan for advanced challenges.</li>
+  </ul>
+</div>
+
+
+<div id="Challengepage">
+  <button id="Backbtn7">Back</button>
+  <label id="challenges" for="50 PUSH-UPS">50 PUSH-UPS</label>
+  <img id="challengeImage" src="push-up.gif" alt="push-up.gif" height="300px" width="300px">
+
+  <button id="Accept">ACCEPT</button>
+
+  <!-- Timer Container -->
+  <div id="timerContainer" style="display:none;">
+    <p>Time Remaining: <span id="timeLeft">120</span> seconds</p>
+    <button id="completeChallenge" disabled>Complete</button>
+  </div>
+</div>
+
+
+  <div id="AchievementsPage">
+    <button id="BackAchievements">Back</button>
+    <h1 id="achH1">Achievements</h1>
+    <div id="achievements-list">
+      <p id="Noachievements">You haven't earned any achievements yet.</p>
+      <ul id="badge-list">
+        
+        
+      </ul>
+    </div>
+  </div>
   
   <script src="main.js"></script>
 </body>
