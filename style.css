@@ -120,14 +120,6 @@ top: 1px;
   background: linear-gradient(90deg, #240b36, #c31432);
   color: white;
 }
-
-#clearDistanceBtn {
-  background: linear-gradient(90deg, #ff9f1c, #ff6b6b);
-  position: relative;
-  left: -70px;
-  top: 200px;
-}
-
 #trackingInfo h3, #trackingInfo h4 {
   margin: 10px 0;
   font-family: Arial, sans-serif;
@@ -722,8 +714,8 @@ form{
    }
    #clearDistanceBtn{
      position: relative;
-     top: 470px;
-     left: 160px;
+     top: 500px;
+     left: 170px;
      background: linear-gradient(90deg, #240b36, #c31432);
      color: white;
      font-weight: bold;
