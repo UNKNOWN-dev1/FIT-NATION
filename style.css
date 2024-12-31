@@ -124,7 +124,8 @@ top: 1px;
 #clearDistanceBtn {
   background: linear-gradient(90deg, #ff9f1c, #ff6b6b);
   position: relative;
-  left: -50px;
+  left: -70px;
+  top: 200px;
 }
 
 #trackingInfo h3, #trackingInfo h4 {
